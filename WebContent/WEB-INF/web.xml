@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>FirstJavaWeb</display-name>
+
+  <!-- UserServlet -->
+    <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<servlet-class>com.atguigu.web.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+  
+
+  
+  
+  
+  <servlet>
+  	<servlet-name>KaptchaServlet</servlet-name>
+  	<servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>KaptchaServlet</servlet-name>
+  	<url-pattern>/kaptcha.jpg</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+        <servlet-name>MenLeiServlet</servlet-name>
+        <servlet-class>com.atguigu.web.MenLeiServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MenLeiServlet</servlet-name>
+        <url-pattern>/menLeiServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>XueKeServlet</servlet-name>
+        <servlet-class>com.atguigu.web.XueKeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>XueKeServlet</servlet-name>
+        <url-pattern>/xueKeServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>ZhuanyeServlet</servlet-name>
+        <servlet-class>com.atguigu.web.ZhuanyeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ZhuanyeServlet</servlet-name>
+        <url-pattern>/zhuanyeServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>resultServlet</servlet-name>
+        <servlet-class>com.atguigu.web.resultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>resultServlet</servlet-name>
+        <url-pattern>/resultServlet</url-pattern>
+    </servlet-mapping>
+    
+ 
+    
+  
+</web-app>
